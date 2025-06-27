@@ -1,8 +1,8 @@
 #include "printf.h"
 
-void ft_putchar(char c)
+void ft_putchar(char a)
 {
-    write(STDERR_FILENO, &c, 1);
+    write(STDERR_FILENO, &a, 1);
 }
 
 int ft_putstr(char *c)
@@ -18,7 +18,7 @@ int ft_putstr(char *c)
     return (count);
 }
 
-int ft_putptr(unsigned long long *p)
+int ft_putptr(unsigned int *p)
 {
     const char *hex_digit = "0123456789abcdef";
     char buffer[22];
